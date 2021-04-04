@@ -2,7 +2,7 @@ from flask import Flask, jsonify
 # from flask_cors import CORS
 
 # app = Flask(__name__)
-app = Flask(__name__, static_folder='../build', static_url_path='/')
+app = Flask(__name__, static_folder='../react-electricity/build', static_url_path='/')
 app.config['JSON_AS_ASCII'] = False  # отключаем выдачу результата в ASCII
 # CORS(app)
 
@@ -14,8 +14,8 @@ db_electricity = [
         'room_number': '0-01',
         'energy_meter_number': '07927265',
         'KTR': 240,
-        'initial_readings': 1267433,
-        'final_readings': 1267800
+        'initial_readings': 67433,
+        'final_readings': 67800
     },
     {
         'id': 2,
