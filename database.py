@@ -4,7 +4,7 @@ from psycopg2 import Error
 
 
 class Database:
-
+    # TODO передавать данные для подключения в конструктор класса
     def __init__(self):
         # self.user = "user"
         self.user = "postgres"
