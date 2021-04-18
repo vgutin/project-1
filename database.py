@@ -25,6 +25,7 @@ class Database:
             self.cursor = self.connection.cursor()
             # print(f'Connected to {self.database} in {self.host} as {self.user}')
         except (Exception, Error) as error:
+            # TODO предусмотреть логгирование ошибок
             # print(f'An error occurred while connecting to {self.database} in {self.host} as {self.user}')
             return False
 
